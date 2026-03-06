@@ -1,0 +1,8 @@
+prefix=/home/eai/maze_ws/devel
+
+Name: maze_runner
+Description: Description of maze_runner
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

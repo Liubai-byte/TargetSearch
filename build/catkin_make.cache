@@ -1,0 +1,2 @@
+maze_runner
+-DCATKIN_DEVEL_PREFIX=/home/eai/maze_ws/devel -DCMAKE_INSTALL_PREFIX=/home/eai/maze_ws/install -G Unix Makefiles
