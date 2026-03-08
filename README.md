@@ -1,5 +1,8 @@
 # 1902TargetSearch
 
+进度
+3/4 可自动避障，从起点走到终点
+
 # turtlebot3_maze_avoidance使用方法
 
 每次打开新终端前执行这一个 source ~/maze_ws/devel/setup.bash
