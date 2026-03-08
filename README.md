@@ -5,7 +5,7 @@
 
 # turtlebot3_maze_avoidance使用方法
 
-每次打开新终端前执行这一个 source ~/maze_ws/devel/setup.bash
+每次打开新终端前执行这一个 source ~/TargetSearch/devel/setup.bash
 
 第一次打开终端执行 
 echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
