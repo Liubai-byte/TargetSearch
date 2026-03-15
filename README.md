@@ -7,22 +7,29 @@
 
 # turtlebot3_maze_avoidance使用方法
 
-每次打开新终端前执行这一个 source ~/TargetSearch/devel/setup.bash
-
-第一次打开终端执行 
-echo "export TURTLEBOT3_MODEL=waffle_pi" >> ~/.bashrc
-source ~/.bashrc
-
-
-终端一 启动带小车的 Gazebo 地图
+终端1:启动 Gazebo 迷宫环境
+先按自己电脑路径进入TargetSearch文件夹
+source /opt/ros/noetic/setup.bash
+catkin_make
+source devel/setup.bash
+export TURTLEBOT3_MODEL=waffle
 roslaunch maze_runner start_maze.launch
 
-终端二 启动 SLAM 建图和 RViz 可视化界面
+终端2:启动 GMapping 建图
+先按自己电脑路径进入TargetSearch文件夹
+source /opt/ros/noetic/setup.bash
+source devel/setup.bash
+export TURTLEBOT3_MODEL=waffle
 roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 
-终端三 运行避障导航算法
-chmod +x ~/maze_ws/src/maze_runner/scripts/maze_solver.py
-rosrun maze_runner maze_solver.py
+终端3:运行探索脚本
+先按自己电脑路径进入TargetSearch文件夹
+source /opt/ros/noetic/setup.bash
+source devel/setup.bash
+export TURTLEBOT3_MODEL=waffle
+rosrun maze_runner 文件名.py
+
+测试时建议同时打开rviz和终端3，分屏观看
 
 <img width="415" height="408" alt="image" src="https://github.com/user-attachments/assets/5514cf63-8e90-4f9e-8ee0-9aca773187bb" />
 <img width="416" height="383" alt="image" src="https://github.com/user-attachments/assets/77984596-9cd8-460d-949f-6a2b96039f7f" />
