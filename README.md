@@ -21,6 +21,7 @@
 
   roslaunch maze_runner start_maze.launch
 
+
 终端2:启动 GMapping 建图
 
   先按自己电脑路径进入TargetSearch文件夹
@@ -33,6 +34,7 @@
 
   roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
   
+
 终端3:运行探索脚本
 
   先按自己电脑路径进入TargetSearch文件夹
