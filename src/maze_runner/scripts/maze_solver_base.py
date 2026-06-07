@@ -10,6 +10,7 @@ if os.path.exists(_ROSCONSOLE_CFG) and ('ROSCONSOLE_CONFIG_FILE' not in os.envir
 os.environ.setdefault('CONSOLE_BRIDGE_LOG_LEVEL', 'error')
 os.environ.setdefault('CONSOLE_BRIDGE_log_level', 'error')
 
+##更改后PR的第一个版本，newfeature
 
 class _FilteredConsoleStream(object):
     """Drop known TF repeated-data spam lines for this process only."""
